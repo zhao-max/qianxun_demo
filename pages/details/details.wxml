@@ -1,0 +1,58 @@
+<view class='title'>
+  <view class='img' style="background-image: url('{{img}}')">
+  </view>
+
+  <view class='back'>
+    <image class='back_left' src='{{img}}' />
+    <view class='back_right'>
+      <view class='back_right_txt'>{{title}}</view>
+      <view class='back_right_lei'>
+        <black wx:for='{{ico}}' wx:key='this' class='back_right_list'>
+          <view class='back_right_list1 txt'>倾城</view>
+        </black>
+      </view>
+    </view>
+    <view class='back_redu'>
+      <image class='huo' src='{{huo}}' />
+      <view class='shu'>110</view>
+    </view>
+  </view>
+</view>
+
+<view class='center'>
+  <view class='center_l d' style='width: {{wid}}px' bindtap='xiangqing'>
+    <view class='xiang' style='border-bottom:{{xiang}}px solid #4DB7F9'>详情</view>
+  </view>
+  <view class='center_2 d' style='width : {{wid}}px'  bindtap='xuanji'>
+    <view class='xuan' style='border-bottom:{{xuan}}px solid #4DB7F9'>选集</view>
+  </view>
+</view>
+
+<!-- 详情页选集分别 -->
+<!-- 详情 -->
+<view wx:if='{{cen1}}' class='cen'>
+  <view class='cen_n'>作品简介</view>
+  <view class='cen_txt'>{{desc}}</view>
+</view>
+<!-- 选集 -->
+<black wx:if='{{cen2}}' class='cen2'>
+  <view class='ji'>
+      <view class='ji_xin'>连载中</view>
+      <view class='ji_zhang'>{{cname}}</view>
+  </view>
+  <view wx:for='{{zhangjie}}' wx:key='this' class='jiIndex'>
+     {{no1}}
+
+  </view>
+
+</black>
+
+
+
+
+
+<!-- 底部漂浮 -->
+<view class='bottom' style='top:{{top}}px'>
+  <view class='jia c' style='width: {{wid}}px'>{{title}}</view>
+  <view class='yue c' style='width: {{wid}}px' catchtap='bao'>立即阅读</view>
+</view>

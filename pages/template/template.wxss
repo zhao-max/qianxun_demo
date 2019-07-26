@@ -1,0 +1,6 @@
+/* 做溢出处理 */
+.txt{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}

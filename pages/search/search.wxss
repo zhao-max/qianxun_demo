@@ -1,0 +1,64 @@
+@import '../ranking/ranking.wxss';
+
+.title{
+  height: 75px;
+  display: flex;
+  border-bottom: 1px solid #f1eeee;
+}
+
+.input{
+  margin: 15px 0px 0px 20px;
+  width: 260px;
+  height: 45px;
+  background-color: #f1eeee;
+  border-radius: 50rpx;
+}
+.button{
+  margin-top: 15px;
+  width: 65px;
+  height: 45px;
+}
+
+/* 热门搜索 */
+.re{
+   height: 150px;
+   border-bottom: 1px solid #f1eeee;
+}
+.BT{
+  width: 110px;
+  height: 26px;
+  border-left: 2px solid red;
+  margin: 20px;
+}
+.re_list{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.re_txt{
+  width: 90px; 
+  height: 30px;
+   border-radius: 50rpx;
+   border:2px solid #f1eeee;
+   margin-left: 20px;
+   margin-top: 10px;
+}
+
+.re_tit{
+  display: flex;
+  justify-content: space-between;
+}
+.re_img{
+  width: 30px;
+  height: 30px;
+  margin: 20px ;
+}
+
+
+.txt{
+  text-align: center;
+}
+
+
+/* 搜索出来的结果 */
+

@@ -1,0 +1,12 @@
+
+<view class='title'>
+
+<open-data type="userAvatarUrl" class='img'></open-data>   
+<open-data type="userNickName" lang="zh_CN" class='name'></open-data>   
+</view>
+
+
+
+
+
+

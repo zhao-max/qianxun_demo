@@ -1,0 +1,227 @@
+@import '../template/template.wxss';
+
+page{
+  background-color: #f1eeee;
+}
+/* 搜索页面设置 */
+
+.page_row{
+  background-color: #38a1dc;
+  height: 90rpx;
+  padding-top: 20rpx;
+  /* 漂浮置顶 */
+  /* position:fixed;
+  top:0; */
+}
+.search{
+  width: 345px;
+  
+}
+.search_arr {
+  border: 1px solid #d0d0d0;
+  border-radius: 10rpx;
+  margin-left: 30rpx;
+  background-color: #FFF;
+  opacity: 0.7;
+}
+.search_arr input{
+  margin-left: 60rpx;
+  height: 60rpx;
+  border-radius: 5px;
+}
+.bc_text {
+  line-height: 68rpx;
+  height: 68rpx;
+  margin-top: 34rpx;
+}
+ 
+.page_row{
+  display: flex;
+  flex-direction: row
+}
+.searchcion {
+  margin: 10rpx 10rpx 10rpx 20rpx;
+  position: absolute;
+  left:25rpx;
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+
+/* 三个图片 */
+.three{
+ height:210rpx;
+  color:  #666;
+  font-size:15px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  background-color: #FFF;
+  margin-top: 10px;
+}
+.icon-image {
+  width:100rpx;
+  height:100rpx;
+  margin: 20rpx 70rpx 0;
+}
+
+.tabText{
+  margin:0 0 0 75rpx;
+}
+
+
+/* 猜你喜欢 */
+    /* 标题 */
+.like ,.Study ,.Recommend ,.news{
+  background-color: #FFF;
+  margin-top: 10px;
+  height: 100%;
+}
+.like_txt{
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+.like_img{
+  width: 30px;
+  height: 35px;
+  margin: 0rpx 20rpx;
+
+}
+.like_txt_title2{
+  margin-left: 20rpx;
+  font-size: 16px;
+  color: #666;
+}
+
+
+/* 在喜欢这儿设置display布局，flex-wrap项目换行，(nowrap（默认）：不换行，wrap：换行，第一行在上方) */
+.like_body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around
+}
+
+/* nth-child(2n)伪类动态选择参数，单双数，一种运算法， */       
+/* 参考：https://blog.csdn.net/u013818205/article/details/86606829 */
+/* .like_list:nth-child(2n){
+  width: 160px;
+  height: 190px;
+  border: 1px solid red;
+ 
+}
+.like_list:nth-child(2n-1){
+  width: 160px;
+  height: 190px;
+  border: 1px solid red;
+} */
+.like_list{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+}
+
+.like_body_img{
+  width: 140px;
+  height: 160px;
+  background-image: url('http://m.qpic.cn/psb?/V12y28vb18judp/f9.m2yXN8YjjO4m1BasqzBH22bMOsgRJ*ZQFkBdH0k8!/b/dL4AAAAAAAAA&bo=jACgAIwAoAARBzA!&rf=viewer_4');
+}
+
+/* 漂浮在图片上，主要是上外边距-55， position这个作用在哪儿没看到。。。应该写不写都行 */
+.like_body_bot{
+      width: 140px;
+			height: 44px;
+			background-color: #e6e6e6;
+			margin-top: -48px;
+			opacity: 0.7;
+      z-index: 1;
+			position: absolute;
+}
+
+.like_body_txt{
+  width: 100px;
+  height: 22px;
+  font-size: 16px;
+}
+.like_body_li{
+   font-size: 13px;
+}
+
+.like_cou{
+  height: 30px;
+}
+
+
+/* 培训 */
+.Study_K{
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+}
+.Study-image{
+	height: 200px;
+
+}
+
+/* 热门推荐 */
+
+.Recommend_list{
+  margin-bottom: 25rpx;
+}
+
+.Recommend_img{
+    display: flex;
+  justify-content: center;
+}
+
+
+.Recommend-image{
+	height: 200px;
+}
+
+.Recommend_bottom{
+      display: flex;
+  justify-content: space-around;
+  padding-top: 10rpx;
+}
+
+.Recommend_txt{
+  width: 100px;
+  height: 30px;
+}
+
+.Recommend_txt1{
+  font-size: 16px;
+  color: #666 ;
+}
+
+/* 最新上架 */
+
+.news_lei{
+  display: flex;
+  justify-content: space-around;
+}
+.news_list{
+  margin-bottom: 10px;
+}
+.news_img{
+  width: 100px;
+  height: 120px;
+}
+
+.news_txt{
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+
+
+}
+
+
+.news_txt1{
+  font-size: 15px;
+  color: #666 ;
+}
+

@@ -1,0 +1,16 @@
+<view class='name'>{{name}}</view>
+
+<view wx:for='{{ind}}' wx:key='this' class='ranking_list' data-index='index'>
+    <view class='ranking_ing'>
+      <image src='{{img}}' class='ranking_ing1' />
+    </view>
+    <view class='ranking_text'>
+      <view class='ranking_name'>万妖之祖</view>
+      <view class='ranking_txt pad'>
+        <text>少年,魔幻,动作</text>
+        <text>|郑多强</text>
+      </view>
+      <view class='ranking_txt'>第843章 果林飘香（完）</view>
+    </view>
+    <view class='ranking_pai {{index==0?"jin":"fla"}} {{index==1?"yin":"fla"}} {{index==2?"tong":"fla"}}'></view>
+</view>

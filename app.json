@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/sou/sou",
+    "pages/search/search",
+    "pages/easel/easel",
+    "pages/details/details",
+    "pages/ranking/ranking"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#38a1dc",
+    "navigationBarTitleText": "千寻",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#f1eeee",
+    "list": [  
+      {
+        "pagePath": "pages/easel/easel",
+        "text": "画架",
+        "iconPath": "pages/image/HJ.png",
+        "selectedIconPath": "pages/image/HJ_1.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "推荐",
+        "iconPath": "pages/image/TJ.png",
+        "selectedIconPath": "pages/image/TJ_1.png"
+      },
+      {
+        "pagePath": "pages/sou/sou",
+        "text": "找漫画",
+        "iconPath": "pages/image/ZMH.png",
+        "selectedIconPath": "pages/image/ZMH_1.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "设置",
+        "iconPath": "pages/image/SZ.png",
+        "selectedIconPath": "pages/image/SZ_1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

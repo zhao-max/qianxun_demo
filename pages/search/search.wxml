@@ -1,0 +1,67 @@
+<view class='title'>
+  <input class='input txt' placeholder="   请输入漫画、作者"  bindinput='input' value='{{inputValue}}' />
+  <button class='button' bindtap='sou'>搜索</button>
+</view>
+
+
+ <!-- 输入框输入的话，隐藏 -->
+ <block wx:if='{{kong}}'>
+<view class='re'>
+  <view class='BT txt'>热门搜索</view>
+  <view class='re_list'>
+    <black wx:for='{{ico}}' wx:key='this' class='re_list'>
+      <view class='re_txt txt'>倾城</view>
+    </black>
+  </view>
+</view>
+
+<view class='re'>
+  <view class='re_tit'>
+  <view class='BT txt'>历史搜索</view>
+  <image  src='http://m.qpic.cn/psb?/V12y28vb18judp/5uKt2FpZfLy3pwGlz8gXHfEt8s2kh*xLlI6lMtQVuik!/b/dL8AAAAAAAAA&bo=QABAAAAAAAADByI!&rf=viewer_4' class='re_img' catchtap='shanchu'  />
+  </view>
+  <view class='re_list'>
+    <black wx:for='{{txtlist}}' wx:key='this' class='re_list'>
+      <view class='re_txt txt'>{{item}}</view>
+    </black>
+  </view>
+</view>
+ </block>
+
+
+<!-- 获取的查询数据 -->
+<black wx:if='{{cha}}'>
+<black wx:if='{{aladdin}}'>
+<view  class='ranking_list' catchtap='book' data-title='{{title}}' >
+    <view class='ranking_ing'>
+      <image src='{{img}}' class='ranking_ing1' />
+    </view>
+    <view class='ranking_text'>
+      <view class='ranking_name'>{{title}}</view>
+      <view class='ranking_txt pad'>
+        <text>{{category}}</text>
+        <text>——{{author}}</text>
+      </view>
+      <view class='ranking_txt'>{{cname}}</view>
+    </view>
+</view>
+</black>
+<view>你可能在找：</view>
+<view wx:for='{{ind}}' wx:key='this' class='ranking_list'   catchtap='classbook'  data-title='{{item.title}}'>
+    <view class='ranking_ing'>
+      <image src='{{item.cover}}' class='ranking_ing1' />
+    </view>
+    <view class='ranking_text'>
+      <view class='ranking_name'>{{item.title}}</view>
+      <view class='ranking_txt pad'>
+        <text>{{item.category}}</text>
+        <text>——{{item.author}}</text>
+      </view>
+      <view class='ranking_txt'>{{item.first_chapter}}</view>
+    </view>
+</view>
+</black>
+<!-- 查不到数据时 -->
+<view wx:if='{{mei}}'>
+  查询条件有误
+</view>

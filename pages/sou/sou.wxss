@@ -1,0 +1,46 @@
+@import '../index/index.wxss';
+
+
+/* 人气榜 */
+
+.bang{
+  height : 80px;
+  display: flex;
+  justify-content: space-around;
+
+}
+.bang_ren ,.bang_geng{
+  width: 120px;
+  height: 60px;
+  margin-top: 10px;
+
+}
+
+
+/* 分类 */
+.lei{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.lei_index{
+  width: 230rpx;
+  height: 280rpx;
+  padding-top : 20rpx;
+  border : 1px solid #ccc7c7;
+  margin-top: 10rpx;
+}
+.lei_img{
+   width: 180rpx;
+  height: 180rpx;
+  margin-left: 10%;
+  padding-top: 10rpx;
+}
+.lei_txt{
+  margin-left: 30%;
+}
+
+/* .lei_index:nth-of-type(2){
+  border-left: 1px solid #ccc7c7;
+   border-right : 1px solid #ccc7c7;
+} */

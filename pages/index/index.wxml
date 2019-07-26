@@ -1,0 +1,78 @@
+<import src='../template/template.wxml' />
+<!-- 搜索 -->
+<template is='sou' data='{{...item}}' />
+<!-- 上边三个图片 -->
+<view class='three'>
+  <view class="three_1" bindtap='clickFen'>
+    <image class="icon-image" src="../image/fenlei.png" />
+    <view class='tabText'>分类</view>
+  </view>
+  <view class="three_2" bindtap='renqi'>
+    <image class="icon-image" src="../image/renqi.png" />
+    <view class='tabText'>人气榜</view>
+  </view>
+  <view class="three_3" bindtap='gengxin'>
+    <image class="icon-image" src="../image/gengxin.png" />
+    <view class='tabText more'>更新榜</view>
+  </view>
+</view> 
+
+<!-- 猜你喜欢 -->
+<view class='like'>
+  <!-- 标题 -->
+  <template is='title' data='{{...likes}}' />
+  <!-- 内容 -->
+  <view class='like_body'>
+    <view wx:for='{{like}}' wx:key='this' class='like_list' bindtap='clickLike' data-bookname='{{item.bookname}}'>
+      <image src='{{item.book_cover}}' class='like_body_img' />
+      <view class='like_body_bot'>
+        <view class='like_body_txt txt'>{{item.bookname}}</view>
+        <view class='like_body_li'>{{item.class_name}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='like_cou'></view>
+</view>
+
+
+<!-- 培训 -->
+
+<view class='Study'>
+  <template is='title' data='{{...item}}' />
+  <view class='Study_K'>
+    <!-- 兼容性问题，图片有偏移，使用wx.getSystemInfo获取用户屏幕宽度，减去40，作为图片宽度， -->
+    <image class="Study-image" src="{{img}}" style='width : {{wid}}' />
+  </view>
+
+</view>
+
+
+
+<!-- 热门推荐 -->
+<view class='Recommend'>
+  <template is='title' data='{{...ico}}' />
+  <view wx:for='{{Recommend}}' wx:key='this' class='Recommend_list'>
+    <view class='Recommend_img'>
+      <image class="Recommend-image" src="{{img}}" style='width : {{wid}}' />
+    </view>
+    <view class='Recommend_bottom'>
+      <view class='Recommend_txt txt'>百炼成神啊哈哈哈哈哈哈</view>
+      <view class='Recommend_txt1'>科幻玄幻</view>
+    </view>
+  </view>
+</view>
+
+
+<!-- 最新上架 -->
+<view class='news'>
+  <template is='title' data='{{...news}}' />
+  <view class='news_lei'>
+  <view wx:for='{{new}}' wx:key='this' class='news_list'>
+      <image src='{{img}}' class='news_img' />
+    <view class='news_txt txt'>我的太子妃啊哈哈哈哈哈</view>
+    <view class='news_txt1'>都市爱情</view>
+  </view>
+  </view>
+</view>
+
+

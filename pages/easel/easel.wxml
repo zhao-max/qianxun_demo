@@ -1,0 +1,19 @@
+<view class='body'>
+  <!-- 有文件时显示 -->
+  <view wx:if="{{font}}" class='shujia'>
+    <view class='shuajia_title'>
+      <view class='BT txt'>浏览的书籍</view>
+      <image src='http://m.qpic.cn/psb?/V12y28vb18judp/5uKt2FpZfLy3pwGlz8gXHfEt8s2kh*xLlI6lMtQVuik!/b/dL8AAAAAAAAA&bo=QABAAAAAAAADByI!&rf=viewer_4' class='re_img' catchtap='shanchu' />
+    </view>
+    <view class='shuajia_img'>
+      <black wx:for="{{height}}" wx:key='this' data-name='{{item.title}}' bindtap='click'>
+        <image src='{{item.cover}}' class='shuajia_image' />
+      </black>
+    </view>
+  </view>
+  <!-- 没有文件时显示 -->
+  <view wx:if='{{!font}}' class='no'>
+    <image src='../image/sui.png' class='no_img' />
+    <view class='no_txt'>一本都没，你的小心心不会痛吗？</view>
+  </view>
+</view>

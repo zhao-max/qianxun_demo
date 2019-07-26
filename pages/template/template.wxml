@@ -1,0 +1,20 @@
+<!-- index中标题模板 -->
+<template name='title'>
+  <view class='like_txt'>
+    <image class='like_img' src='{{img}}' />
+    <view class='like_txt_title'>{{titleTxt}}</view>
+    <view class='like_txt_title2'>{{titleSmail}}</view>
+  </view>
+</template>
+
+<!-- 主页搜索框 -->
+<template name='sou'>
+  <view class='page_row' bindtap="suo">
+    <view class="search">
+      <view class="search_arr">
+        <icon class="searchcion" size='20' type='search'></icon>
+        <input disabled placeholder="搜漫画~  搜作者~" />
+      </view>
+    </view>
+  </view>
+</template>

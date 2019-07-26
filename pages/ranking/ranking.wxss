@@ -1,0 +1,50 @@
+.name{
+  height: 40px;
+  background-color: #38a1dc;
+  text-align: center;
+}
+
+
+.ranking_list{
+  height: 260rpx;
+  display: flex;
+  border-bottom: 1px solid #666;
+  align-items: center;
+
+
+}
+.ranking_ing1{
+  width: 160rpx;
+  height: 200rpx;
+  margin: 0px 10px;
+}
+.ranking_text{
+  width: 250px;
+}
+.ranking_txt{
+  font-size: 16px;
+  color: #666 ;
+}
+.pad{
+  margin: 6px 0px;
+}
+
+.jin{
+  width: 130rpx;
+  height: 135rpx;
+  padding-left: 20px;
+  background-image: url('http://m.qpic.cn/psb?/V12y28vb18judp/b7QxwfkbgAGKOalmezw7QssYI.ENwbEP5YKwDg2f*ko!/b/dL8AAAAAAAAA&bo=QABAAAAAAAADByI!&rf=viewer_4');
+}
+.yin{
+  width: 130rpx;
+  height: 135rpx;
+  padding-left: 20px;
+  background-image: url('http://m.qpic.cn/psb?/V12y28vb18judp/aSjcJpcacFsXVzydXhGQieJWo3j68jnOX.DhfqtYsYg!/b/dL8AAAAAAAAA&bo=QABAAAAAAAADFzI!&rf=viewer_4');
+}
+
+.tong{
+  width: 130rpx;
+  height: 135rpx;
+  padding-left: 20px;
+  background-image: url('http://m.qpic.cn/psb?/V12y28vb18judp/yD80uAAbhtxdfp4aeH1m4wtZvLQi.kt0ylLNuLCyBCA!/b/dAgBAAAAAAAA&bo=QABAAAAAAAADFzI!&rf=viewer_4');
+}

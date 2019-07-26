@@ -1,0 +1,46 @@
+@import '../search/search.wxss' ;
+
+
+page{
+  background-color: #e6e6e6;
+  
+}
+.body{
+height: 1050rpx;
+background-color: #FFF;
+margin: 30rpx 30rpx 30rpx 30rpx;
+}
+
+/* 有文件时 */
+.shuajia_title{
+  display: flex;
+  margin:10px 0px;
+  justify-content: space-between;
+}
+.shuajia_img{
+  display: flex;
+flex-wrap: wrap;
+}
+.shuajia_image{
+  width:180rpx;
+  height:240rpx;
+  margin: 20rpx 20rpx;
+}
+
+/* 没有文件 */
+.no{
+  height: 1050rpx;
+  display: flex;
+ flex-direction: column;       /*  主轴为垂直 */
+  justify-content: center;      /*  以主轴方向居中 */
+ 
+}
+.no_img{
+  width: 170rpx;
+  height: 170rpx;
+  margin-left: 30%;
+}
+.no_txt{
+  font-size: 16px;
+  margin-left: 14%;
+}

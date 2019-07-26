@@ -1,0 +1,20 @@
+<import src='../template/template.wxml' />
+
+<!-- 搜索 -->
+<template is='sou' data='{{...item}}' />
+
+<!-- 人气，更新榜 -->
+<view class='bang'>
+  <image src='../image/sucai/renqi.png' class='bang_ren' bindtap='renqi'/>
+  <image src='../image/sucai/gengxin.png' class='bang_geng' bindtap='gengxin'/>
+</view>
+
+<!-- 类别 -->
+<view class='lei'> 
+  <view wx:for='{{succ}}' wx:key='this' class='lei_index'>
+  <black bindtap='{{item.click}}'>
+    <view class='lei_txt'>{{item.name}}</view>
+    <image src='{{item.img}}' class='lei_img' />
+  </black>
+  </view>
+</view>

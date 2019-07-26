@@ -1,0 +1,145 @@
+.img {
+  height: 160px;
+}
+
+.back {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -160px;
+  background-color: black;
+  opacity: 0.84;
+}
+
+.back_left {
+  width: 160rpx;
+  height: 200rpx;
+}
+
+.back_right {
+  width: 440rpx;
+  height: 200rpx;
+}
+
+.back_right_lei {
+  display: flex;
+  margin-top: 20px;
+}
+
+.back_right_list1 {
+  width: 60px;
+  height: 25px;
+  border-radius: 50rpx;
+  border: 1px solid #f1eeee;
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.back_right_txt {
+  margin-left: 15px;
+  color: #fff;
+}
+
+.txt {
+  text-align: center;
+  color: #fff;
+}
+
+.back_redu {
+  width: 60rpx;
+  height: 200rpx;
+}
+
+.huo {
+  margin-top: 100rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.shu {
+  font-size: 13px;
+  color: #fff;
+}
+
+/* 详情选集 */
+
+.center, .bottom {
+  display: flex;
+}
+
+.center_l {
+  height: 50px;
+  border-right: 1px solid #f1eeee;
+}
+
+.center_2 {
+  height: 50px;
+}
+
+.xiang, .xuan {
+  /* width: 60px;
+  height: 30px; */
+}
+
+.d {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/* 剧情，选集 */
+
+.cen {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.cen_txt {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.ji {
+  display: flex;
+  margin: 10px 0px;
+}
+
+.ji_xin {
+  font-size: 17px;
+  margin: 0px 10px;
+}
+
+.ji_zhang {
+  font-size: 16px;
+  color: #666;
+}
+
+.jiIndex {
+  width: 290px;
+  height: 30px;
+  border: 1px solid #f1eeee;
+  border-radius: 15rpx;
+  margin: 10px 0px 0px 10px;
+  text-align: center;
+}
+
+/* 下边阅读 */
+
+.bottom {
+  position: absolute;
+}
+
+.jia {
+  background-color: #f1eeee;
+}
+
+.yue {
+  background-color: #4db7f9;
+}
+
+.c {
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+}
